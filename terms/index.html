@@ -20,9 +20,16 @@
       ul, ol { margin: 0 0 12px; padding-left: 1.5em; }
       li { margin: 2px 0; overflow-wrap: anywhere; }
       code { padding: 1px 6px; background: var(--cream); border-radius: 6px; font-size: 0.9em; }
-      .table-wrap { margin: 0 0 16px; overflow-x: auto; }
-      table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 14px; line-height: 1.7; }
-      th, td { padding: 8px 10px; border: 1px solid var(--line); vertical-align: top; text-align: left; }
+      .table-wrap { margin: 0 0 16px; }
+      table { border-collapse: collapse; width: 100%; table-layout: auto; font-size: 14px; line-height: 1.7; }
+      th, td { padding: 8px 10px; border: 1px solid var(--line); vertical-align: top; text-align: left; overflow-wrap: anywhere; word-break: normal; }
+      /* スマホ：表は横にはみ出さず、折り返して全部見せる */
+      @media (max-width: 600px) {
+        body { padding: 12px; }
+        main { padding: 20px 14px; border-radius: 20px; }
+        table { font-size: 13px; line-height: 1.6; }
+        th, td { padding: 6px 7px; }
+      }
       th { background: var(--cream); }
       footer { padding: 16px 0 32px; font-size: 13px; color: var(--muted); }
       footer a { color: var(--accent); }
