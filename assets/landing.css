@@ -1,0 +1,32 @@
+@font-face{font-family:"MPLUS Rounded 1c";font-weight:500;font-display:swap;src:url("fonts/mplus-medium.woff2") format("woff2")}
+@font-face{font-family:"MPLUS Rounded 1c";font-weight:800;font-display:swap;src:url("fonts/mplus-extrabold.woff2") format("woff2")}
+:root{--coral:#f87965;--coral-dark:#c9503d;--yellow:#f6ca65;--bg:#fffcf6;--surface:#fff3d5;--cocoa:#654536;--leaf:#95b78b;--pink:#fad7cb;--line:rgba(101,69,54,.16)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--cocoa);font-family:"MPLUS Rounded 1c","Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;font-weight:500;line-height:1.8;overflow-x:hidden}
+.wrap{max-width:480px;margin:0 auto;padding:0 20px;position:relative}
+.hero{position:relative;text-align:center;padding:56px 0 24px}
+.sun{width:112px;height:auto;display:block;margin:0 auto 12px}
+.brand{margin:0;font-weight:800;font-size:15px;color:var(--coral-dark);letter-spacing:.2em}
+h1{margin:8px 0 12px;font-weight:800;font-size:28px;line-height:1.4}
+.lead{margin:0;font-size:15px;text-wrap:balance}
+.cards{list-style:none;margin:28px 0;padding:0;display:grid;gap:12px}
+.cards li{background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px 20px}
+.cards b{display:block;font-weight:800;font-size:16px}
+.cards span{font-size:14px}
+.btns{display:grid;gap:12px;margin:8px 0 8px}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:800;font-size:17px;padding:16px 24px;border-radius:999px;min-height:52px}
+.btn.primary{background:var(--coral-dark);color:#fff}
+.btn.sub{background:var(--yellow);color:var(--cocoa)}
+.btn:focus-visible,.links a:focus-visible{outline:3px solid var(--cocoa);outline-offset:3px}
+.note{font-size:13px;text-align:center;margin:8px 0 0}
+.stores{display:grid;gap:8px;margin:20px 0 0}
+.store{display:block;text-align:center;font-size:14px;padding:12px;border:1px dashed var(--line);border-radius:16px;background:var(--surface)}
+.links{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 20px;list-style:none;margin:36px 0 0;padding:0;font-size:14px}
+.links a{color:var(--cocoa);padding:10px 4px;display:inline-block}
+.copy{text-align:center;font-size:12px;margin:8px 0 0}
+.deco{position:relative;margin-top:24px;height:130px;overflow:hidden;pointer-events:none}
+.deco img{position:absolute;bottom:0;height:130px;width:auto}
+.deco .c{left:50%;transform:translateX(-50%);height:240px;bottom:-110px}
+.deco .l{left:calc(50% - 150px);bottom:0;height:96px}
+@media (prefers-reduced-motion:no-preference){.sun{animation:float 6s ease-in-out infinite}}
+@keyframes float{50%{transform:translateY(-6px)}}
