@@ -12,7 +12,7 @@ h1{margin:8px 0 12px;font-weight:800;font-size:28px;line-height:1.4}
 .cards{list-style:none;margin:28px 0;padding:0;display:grid;gap:12px}
 .cards li{background:#fff;border:1px solid var(--line);border-radius:24px;padding:16px 20px}
 .cards b{display:block;font-weight:800;font-size:16px}
-.cards span{font-size:14px}
+.cards span{font-size:14px;text-wrap:balance}
 .btns{display:grid;gap:12px;margin:8px 0 8px}
 .btn{display:block;text-align:center;text-decoration:none;font-weight:800;font-size:17px;padding:16px 24px;border-radius:999px;min-height:52px}
 .btn.primary{background:var(--coral-dark);color:#fff}
@@ -30,3 +30,23 @@ h1{margin:8px 0 12px;font-weight:800;font-size:28px;line-height:1.4}
 .deco .l{left:calc(50% - 150px);bottom:0;height:96px}
 @media (prefers-reduced-motion:no-preference){.sun{animation:float 6s ease-in-out infinite}}
 @keyframes float{50%{transform:translateY(-6px)}}
+@media (min-width:768px){
+.wrap{max-width:1040px;padding:0 40px}
+.hero{padding:96px 0 40px}
+.sun{width:160px;height:auto;margin-bottom:16px}
+.brand{font-size:18px}
+h1{font-size:48px;margin:12px 0 20px}
+.lead{font-size:20px}
+.cards{grid-template-columns:repeat(3,1fr);gap:24px;margin:48px 0}
+.cards li{padding:28px 28px}
+.cards b{font-size:19px;margin-bottom:6px}
+.cards span{font-size:15px}
+.btns{max-width:360px;margin:16px auto 8px}
+.btn{font-size:19px;padding:18px 28px}
+.note{font-size:14px}
+.stores{max-width:360px;margin:24px auto 0}
+.links{margin-top:64px;gap:4px 32px;font-size:15px}
+.deco{height:200px;margin-top:40px}
+.deco .c{height:360px;bottom:-170px}
+.deco .l{height:140px;left:calc(50% - 260px)}
+}
