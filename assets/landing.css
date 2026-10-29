@@ -30,6 +30,7 @@ h1{margin:4px 0 8px;font-weight:800;font-size:26px;line-height:1.4}
 .cards{margin:12px 0}
 .cards span{display:none}
 .cards li{padding:8px 20px}
+.deco .lf{height:60px}
 }
 @media (min-width:900px){
 .wrap{max-width:1040px;padding:24px 40px 96px;display:grid;grid-template-columns:1fr 1fr;gap:0 56px;align-items:center}
